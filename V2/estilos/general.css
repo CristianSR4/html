@@ -1,0 +1,12 @@
+.primero img {
+	background: green;
+	width: 1024px;
+	height: 900px;
+	padding: 5px;
+}
+
+.primero p {
+	color: red;
+	font-size: 40pt;
+}
+
