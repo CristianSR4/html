@@ -1,17 +1,89 @@
-function ObtenerDato1()
+function ObtenerOperando(idOperando){
+	var miOperando;
+
+	miOperando = document.getElementById(idOperando);
+	return parseInt(miOperando.value);
+}
+
+function ObtenerOp1() {
+	var miOperando1,
+		valorOp1;
+
+	miOperando1 = document.getElementById('Operando1');
+	valorOp1 = parseInt(miOperando1.value);
+	return valorOp1;
+}
+
+function ObtenerOp2() {
+	var miOperando2,
+		valorOp2;
+
+	miOperando2 = document.getElementById('Operando2');
+	valorOp2 = parseInt(miOperando2.value);
+	return valorOp2;
+}
+
+function Sumar()
 {
-	/* Realiza operaciones aritmetivcas con elementos del documento HTML */
+	var	miResultado,
+		valorOperando1,
+		valorOperando2,
+		valor;
 
-var miResultado;
-var miDato;
+	miResultado = document.getElementById('Resultado');
+	valorOperando1 = ObtenerOperando('Operando1');
+	valorOperando2 = ObtenerOperando('Operando2');
+	valor = valorOperando1 + valorOperando2;
+	miResultado.innerHTML = valor;
 
-miDato = document.getElementById('Dato1');
-miResultado = document.getElementById('Resultado');
-miResultado.innerHTML =
-	"El valor del primer dato es " +miDato.value;	
+/*	document.getElementById('Resultado').innerHTML = 
+		parseInt(document.getElementById('Operando1').value)
+		+
+		parseInt(document.getElementById('Operando2').value);
+*/
+}
 
-miDato = document.getElementById('Dato2');
-miResultado = document.getElementById('Resultado2');
-miResultado.innerHTML =
-	"El valor del segundo dato es " +miDato.value;	 	
+function Restar()
+{
+	var	miResultado,
+		valorOperando1,
+		valorOperando2,
+		valor;
+
+	miResultado = document.getElementById('Resultado');
+	valorOperando1 = ObtenerOperando('Operando1');
+	valorOperando2 = ObtenerOperando('Operando2');
+	valor = valorOperando1 - valorOperando2;
+	miResultado.innerHTML = valor;
+
+}
+
+function Multiplicar()
+{
+	var	miResultado,
+		valorOperando1,
+		valorOperando2,
+		valor;
+
+	miResultado = document.getElementById('Resultado');
+	valorOperando1 = ObtenerOperando('Operando1');
+	valorOperando2 = ObtenerOperando('Operando2');
+	valor = valorOperando1 * valorOperando2;
+	miResultado.innerHTML = valor;
+
+}
+
+function Dividir()
+{
+	var	miResultado,
+		valorOperando1,
+		valorOperando2,
+		valor;
+
+	miResultado = document.getElementById('Resultado');
+	valorOperando1 = ObtenerOperando('Operando1');
+	valorOperando2 = ObtenerOperando('Operando2');
+	valor = valorOperando1 - valorOperando2;
+	miResultado.innerHTML = valor;
+
 }

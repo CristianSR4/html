@@ -6,18 +6,23 @@
 	<script type="text/javascript" src="calculadorav1.js"></script>
 </head>
 <body>
+	<H1>
+		Calculadora - V1
+	</H1>
 	<p>
-		Esta es una calculadora con un botón.
+	Primer Operando
+	<input type="text" id="Operando1">
 	</p>
-	<input type="number" id="Dato1">
-	<input type="number" id="Dato2">
-	<button onclick="ObtenerDato1();">RecogerValor</button>
+	<p>
+	Segundo Operando
+	<input type="text" id="Operando2">
+	</p>
+	<button onclick="Sumar()";>+</button>
+	<button onclick="Restar()";>-</button>
+	<button onclick="Multiplicar();">*</button>
+	<button onclick="Dividir();">/</button>
 	<p id="Resultado">
-		Este es el texto.
-	</p>
-	
-	<p id="Resultado2">
-		Este es el texto.
+		Resultado
 	</p>
 </body>
 </html>
