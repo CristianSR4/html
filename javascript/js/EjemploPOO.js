@@ -20,17 +20,37 @@ class Contacto
 
 	CambiarTelefono(nuevoT)
 	{
-		this.Telefono = nuevoT;
+		this.telefono = nuevoT;
+	}
+
+	CambiarNombre(nuevoN)
+	{
+		this.nombre = nuevoN;
 	}
 }
 
+// Objetos Globales
+var c1; //Objeto de clase Contacto
+
 function CrearContacto()
 {
-	var c1 = new Contacto("Pepe", 1111),
-		c2 = new Contacto("Ana", 9374);
+	c1 = new Contacto("Pepe", 1111);
 		
 	c1.Escribir();
-	c2.Escribir();
 }
+
+function ModificarContacto()
+{
+	var valorNombre,
+		valorTelefono;
+
+	valorNombre = document.getElementById('nombre').value;
+	valorTelefono = document.getElementById('telefono').value;
+	c1.CambiarNombre(valorNombre);
+	c1.CambiarTelefono(valorTelefono);
+	c1.Escribir();
+}
+
+	
 
 //Sacar 3 contactos y que pueda modificarlo desde la web.
