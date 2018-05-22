@@ -6,12 +6,25 @@
 	<script type="text/javascript" src="js/EjemploPOO.js"></script>
 </head>
 <body>
-		<p>
-			Pulsa el botón para crear un contacto y mostrarlo en pantalla.
-		</p>
-		<button onclick="CrearContacto();">Crear contacto</button>
+  		<button onclick="CrearContacto();">
+  		Mostrar contactos
+		</button>
 		<p id="Resultado">
-			Los datos del contacto: <br>
-		</p>
+  			Los contactos son:
+  		</p>
+		<p>Elige que contacto quieres cambiar:
+		<input type="text" id="Selector"> </p>
+		<p>Introduce el nuevo nombre:
+		<input type="text" id="NuevoN"> </p>
+		<p>Introduce el nuevo telefono:
+		<input type="text" id="NuevoT"> </p>
+ 		<p id="opcion"> 
+ 		 Elige una opcion: 
+  		</p>
+		<button onclick="CambiarContacto();">Cambiar Contacto</button>
+		<button onclick="AñadirContacto();">Añadir Contacto</button>
+  		<p id="Resultado">
+  			Los contactos son:
+  		</p>
 </body>
 </html>
