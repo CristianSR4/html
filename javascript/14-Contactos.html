@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda Contactos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/contactos.js"></script>
+</head>
+<body>
+	<h1 id="nombres">AGENDA CONTACTOS</h1>
+
+	<p>
+		Elige contacto a cambiar
+		<input type="text" id="Cambiar">
+	</p>
+
+	<p>
+		Nuevo Nombre
+		<input type="text" id="Nombre">
+	</p>
+
+	<p>
+		Nuevo Telefono
+		<input type="text" id="Telefono">
+	</p>
+
+	<p>
+		Nueva Direccion
+		<input type="text" id="Direccion">
+	</p>
+	<p id="Opciones">
+		<button onclick="MostrarContacto();">Mostrar Contacto</button>
+		<button onclick="CambiarContacto();">Cambiar Contacto</button>
+		<button onclick="AñadirContacto();">Añadir Contacto</button>
+		<button onclick="BorrarContacto();">Borrar Contacto</button>
+	</p>
+
+	<p id="Resultado">
+		Resultado
+	</p>
+
+</body>
+</html>
