@@ -6,7 +6,7 @@ function CalcularEtapa()
 
 	campoResultado = document.getElementById('Resultado');
 	campoEdad = document.getElementById('Edad');
-	valorEdad = parseInt(cfampoEdad.value);
+	valorEdad = parseInt(campoEdad.value);
 
 	switch(valorEdad){
 		case 12:

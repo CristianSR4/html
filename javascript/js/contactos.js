@@ -28,11 +28,18 @@ class Contacto
 		"Nombre: " + this.nombre + "<br>"; 
 	}
 
-	CambiarTelefono(NuevoNombre, NuevoTelefono, NuevaDireccion)
+	CambiarTelefono(elementoHTML)
 	{
-		this.telefono = NuevoTelefono;
+		var telefono;
+
+    telefono=document.getElementById('Telefono').value;
+
+   	for(var i = 0 ; i<c.length ; i++){
+         c[i].Escribir();
+    }
 		
 	}
+
 	CambiarDireccion(elementoHTML)
 	{
 		this.direccion = NuevaDireccion;
